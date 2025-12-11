@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express();
 
-// --- CONFIGURATION ---
+
 const uri = process.env.MONGO_URI; 
 const port = process.env.PORT || 3000;
 

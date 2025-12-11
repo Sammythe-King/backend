@@ -44,7 +44,7 @@ app.get('/api/lessons', async (req, res) => {
     }
 });
 
-// 2. SEARCH Route
+
 app.get('/api/search', async (req, res) => {
     try {
         const query = req.query.q; 

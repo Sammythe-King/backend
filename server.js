@@ -10,9 +10,9 @@ const app = express();
 const uri = process.env.MONGO_URI; 
 const port = process.env.PORT || 3000;
 
-// --- MIDDLEWARE ---
+// --- MIDDLEWARE(remeber to fix logger probenm) ---
 app.use((req, res, next) => {
-    // Logger
+    
     console.log(`[${new Date().toISOString()}] ${req.method} request to ${req.url}`);
     next();
 });

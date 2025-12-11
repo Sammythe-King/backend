@@ -32,9 +32,9 @@ MongoClient.connect(uri)
     .catch(err => console.error(err));
 
 
-// --- ROUTES ---
 
-// 1. GET All Lessons
+
+// 1. GET All Lessons(dont forget to figure out sort funtionalti)
 app.get('/api/lessons', async (req, res) => {
     try {
         const lessons = await db.collection('lessons').find({}).toArray();
